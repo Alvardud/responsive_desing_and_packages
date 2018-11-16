@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-//import 'package:responsive_desing_and_packages/primerLayout.dart';
+import 'package:responsive_desing_and_packages/primerLayout.dart';
 
 void main() => runApp(new MyApp());
 
@@ -32,8 +32,7 @@ class _tabs extends State<LayoutPrincipal>{
               builder: (context){
                 switch(index){
                   case 0:
-                    return Container();
-                    //return primerLayout();
+                    return primerLayout();
                   default:
                     return Container();
                 }
