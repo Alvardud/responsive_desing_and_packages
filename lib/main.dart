@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:responsive_desing_and_packages/primerLayout.dart';
+import 'package:responsive_desing_and_packages/cuentaLayout.dart';
 
 void main() => runApp(new MyApp());
 
@@ -23,8 +24,8 @@ class _tabs extends State<LayoutPrincipal>{
                   icon: Icon(CupertinoIcons.home),
                   title: Text('Inicio')),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.search),
-                  title: Text('Buscar'))
+                  icon: Icon(CupertinoIcons.profile_circled),
+                  title: Text('Cuenta'))
             ],
           ),
           tabBuilder: (context,index){
@@ -33,6 +34,8 @@ class _tabs extends State<LayoutPrincipal>{
                 switch(index){
                   case 0:
                     return primerLayout();
+                  case 1:
+                    return cuentaLayout();
                   default:
                     return Container();
                 }
